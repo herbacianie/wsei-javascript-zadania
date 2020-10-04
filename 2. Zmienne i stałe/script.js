@@ -1,4 +1,4 @@
-zad 1
+// zadanie 1
 
 let number1 = 2;
 let text1 = "text";
@@ -12,7 +12,7 @@ console.log(numberAndString);
 console.log(logic);
 console.log(special);
 
-zad 2
+// zadanie 2
 
 var numberOne = 5;
 var numberTwo = 3;
@@ -20,7 +20,7 @@ var sum = 0;
 sum = numberOne + numberTwo;
 console.log(sum)
 
-zad 3
+// zadanie 3
 
 let test;
 console.log(test);
