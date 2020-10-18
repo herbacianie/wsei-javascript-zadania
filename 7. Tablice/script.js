@@ -66,3 +66,31 @@ const arrLength = arr.length - 1;
 arr.forEach((v, i) => {
     console.log(arr[arrLength - i]);
 });
+
+
+//zad 4
+function myTable(paramTable){
+    let result = 0;
+    for(i=0; i<paramTable.length; i++){
+
+        result = result + paramTable[i];
+    }
+    console.log(result)
+};
+
+myTable([1,2,3,4]);
+
+//zad 5
+
+function myTable(paramTable){
+  var sum = 0;
+  for(i=0; i<paramTable.length; i++){
+    sum = sum + paramTable[i];
+    }
+  var average = sum /paramTable.lenght;
+  
+  for(i=0, i<paramTable.length, i++){
+    console.log(paramTable[i]*average);
+};
+
+myTable([1,2,3,4]);
