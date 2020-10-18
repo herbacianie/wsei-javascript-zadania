@@ -106,7 +106,7 @@ for (var i=0; i<5; i++) {
 
 // c 
 
-let star="";
+let star="*";
 let space=" ";
 var j=4;
 var l=1;
