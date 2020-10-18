@@ -113,7 +113,7 @@ var l=1;
 for(var i=0; i<5; i++){
 
 result1="";
-result2="";
+result2="*";
 
   for(var k=j; k>0; k--){
    result1+=space;
