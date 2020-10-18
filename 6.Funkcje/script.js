@@ -15,7 +15,7 @@ nameFunction(2console);
 // zad 3
 
 let txt = 'omg';
-function returnString= (txt) -> {
+function returnString= (txt) => {
 return txt;
 }
 console.log(returnString(txt));
