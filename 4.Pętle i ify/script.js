@@ -95,7 +95,7 @@ let stars = '*';
 let spacer = ' ';
 for (var i=0; i<5; i++) {
     var result = '';
-    for (var j = 0; j < i; j--) {
+    for (var j = 5 - 1; j > i; j--) {
         result += spacer;
     }
     for (var k = 0; k <= i; k++) {
