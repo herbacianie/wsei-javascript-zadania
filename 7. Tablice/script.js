@@ -94,3 +94,32 @@ function myTable(paramTable){
 };
 
 myTable([1,2,3,4]);
+  
+// zad 6
+  
+  myTable([1,2,3,4]);
+
+function myTable(paramTable){
+    var sum =0;
+    var length = 0;
+    for (i=0; i<paramTable.length; i++){
+        if(paramTable[i] % 2 == 0){
+            
+            sum = sum + paramTable[i];
+            length++;
+        }
+            
+    }
+    let avg = sum / length;
+    console.log(avg)
+};
+
+  //zad 10
+  function reserveSing(paramTable)
+{
+  return  paramTable.map(el => {
+    return el * (-1);
+  })
+}
+console.log(reserveSing([1,2,3,4,6,-6]));
+  
