@@ -12,4 +12,4 @@ console.log(5*2);
 
 console.log("Hello World");
 console.log(Hello World); 
-console.log("Hello World); // tylko piewrsza linia console.log jest poprawna, przy kolejnych wywurzca błąd.
+console.log("Hello World); // tylko piewrsza linia console.log jest poprawna, przy kolejnych wyrzuca błąd.
