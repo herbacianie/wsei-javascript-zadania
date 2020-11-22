@@ -70,3 +70,35 @@ console.log(calc1.multiply());
 
 console.log(calc2.substract());
 console.log(calc2.division());
+
+//zad 4
+
+function Constructor(){
+    this.number = 0;
+    
+    this.up = function() {
+        this.number++;
+    }
+    
+    this.down = function() {
+        if(this.number > 0){
+            this.number--;
+        }
+        else{
+            console.log("Jesteś na ziemi.");
+        }        
+    }
+    
+    this.showLevel = function() {
+        console.log(this.number);
+    }
+}
+
+var constructor = new Constructor();
+
+constructor.showLevel();
+constructor.up();
+constructor.up();
+constructor.showLevel();
+constructor.down();
+constructor.showLevel();
