@@ -113,7 +113,42 @@ function myTable(paramTable){
     let avg = sum / length;
     console.log(avg)
 };
+  
+//zad 7
 
+const nums = [2, 7, 5, 34, 1, 65];
+function compareNumbers(a, b) {
+    return a - b;
+}
+console.log(nums.sort(compareNumbers));
+
+
+//zad 8
+
+
+const arr1 = [1, 5, 8, 44, 56, 39];
+const arr2 = [9, 0, 21, 78, 8, 4];
+const newArr = [];
+
+function addIndexes(arr1, arr2) {
+    arr1.forEach((num1, i) => {
+        newArr.push(num1 + arr2[i]);
+    });
+    return newArr;
+}
+
+console.log(addIndexes(arr1, arr2));
+
+//zad 9
+
+function excludeGivenElementFromArray(arr, element) {
+    let el = arr.indexOf(element);
+    arr.splice(el, 1);
+    return arr;
+}
+
+console.log(excludeGivenElementFromArray(nums, nums[2]));
+  
   //zad 10
   function reserveSing(paramTable)
 {
