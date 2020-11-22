@@ -1,19 +1,28 @@
 // zadanie 1
 
-function Person(firstname, lastname, age, country, city, language) {
-    this.firstname = firstname, 
-    this.lastname = lastname, 
-    this.age = age,
-    this.country = country,
-    this.city = city,
-    this.language = language
+function Person(name, lastName, age, country, city, language) {
+    this.name = name;
+    this.lastname = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.language = language;
+    this.changeCity = function (newCity) {
+        return (this.city = newCity);
+    };
+    this.changeAge = function (newAge) {
+        return (this.age = newAge);
+    };
 }
+const p1 = new Person('Janusz', 'Korwin', 52, 'Poland', 'Krakow', 'polish');
+const p2 = new Person('Grażyna', 'Dziewczyna', 30, 'Poland', 'Gdansk', 'Polish');
+const p3 = new Person('Jan', 'Szczecina', 40, 'Germany', 'Hamm', 'german');
+const p4 = new Person('Antoni', 'Macierewicz', 58, 'Poland', 'Warszawa', 'polish');
+const p5 = new Person('Martin', 'Muller', 78, 'Germany', 'Berlin', 'german');
 
-const user1 = new Person('Imie', 'Nazwisko', 20, 'Polska', 'Krakow', 'polski');
-const user2 = new Person('Imie', 'Nazwisko', 22, 'Polska', 'Krakow', 'polski');
-console.log(user1)
-console.log(user2)
-
+p1.changeAge(53);
+p1.changeCity('Lębork');
+console.log(p1, p2, p3, p4, p5);
 // zadanie 2
 
 
