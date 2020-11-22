@@ -52,3 +52,23 @@ calc1.div(12,3)
 calc1.showMemory()
 
 // zadanie 3
+function Game() {
+	this.changeNumber = function () {
+		Game.prototype.interval = setInterval(() => {
+			Game.prototype.number = Math.round(Math.random() * 10);
+			console.log(Game.prototype.number);
+		}, 1000);
+	};
+	this.checkNumber = function () {
+		Game.prototype.check = setInterval(() => {
+			if (Game.prototype.number > 5) {
+				clearInterval(Game.prototype.interval);
+				clearInterval(Game.prototype.check);
+			}
+		}, 1000);
+	};
+}
+const game1 = new Game();
+const game2 = new Game();
+game1.changeNumber();
+game2.checkNumber();
