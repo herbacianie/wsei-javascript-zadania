@@ -20,3 +20,24 @@ const listElement = document.querySelector('#list');
 
 console.log(listElement);
 
+// zad 4
+
+function showElements(elements) {
+    console.log(elements);
+}
+
+showElements(
+    searchElements('li')
+);
+showElements(
+    searchElements('ul')
+);
+showElements(
+    searchElements('span')
+);
+showElements(
+    searchElements('div.list span')
+);
+showElements(
+    searchElements('div#spans span')
+);
